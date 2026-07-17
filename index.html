@@ -4,28 +4,35 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=1006">
 	<title>Dungeon Blitz Talent Calculator</title>
-	<link rel="stylesheet" href="main.css?v=53" type="text/css">
+	<link rel="stylesheet" href="main.css?v=54" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<script type="text/javascript">
-		var json_version = 53;
+		var json_version = 54;
 	</script>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/talent-data.js?v=59"></script>
+	<script src="js/mage-data.js?v=1"></script>
+	<script src="js/viperblade-data.js?v=1"></script>
+	<script src="js/soulthief-data.js?v=1"></script>
+	<script src="js/sentinel-data.js?v=1"></script>
+	<script src="js/justicar-data.js?v=1"></script>
+	<script src="js/templar-data.js?v=1"></script>
 	<script src="js/talentcalc.js?v=59"></script>
+	<script src="js/all-disciplines.js?v=1"></script>
 </head>
 <body>
 	<div class="content-header">
 		<div class="header">
 			<div class="dsc-nav">
-				<div class="dsc-select dsc1 locked" dsc_id="0"><div class="dsc-tip">Mage<br>Frostbringer<br>Archived data unavailable</div></div>
-				<div class="dsc-select dsc2 locked" dsc_id="1"><div class="dsc-tip">Mage<br>Flameseer<br>Archived data unavailable</div></div>
-				<div class="dsc-select dsc3 locked" dsc_id="2"><div class="dsc-tip">Mage<br>Necromancer<br>Archived data unavailable</div></div>
-				<div class="dsc-select dsc4 locked" dsc_id="3"><div class="dsc-tip">Rogue<br>Viperblade<br>Archived data unavailable</div></div>
-				<div class="dsc-select dsc5 default" dsc_id="4"><div class="dsc-tip">Rogue<br>Shadowstalker</div></div>
-				<div class="dsc-select dsc6 locked" dsc_id="5"><div class="dsc-tip">Rogue<br>Soulthief<br>Archived data unavailable</div></div>
-				<div class="dsc-select dsc7 locked" dsc_id="6"><div class="dsc-tip">Paladin<br>Sentinel<br>Archived data unavailable</div></div>
-				<div class="dsc-select dsc8 locked" dsc_id="7"><div class="dsc-tip">Paladin<br>Justicar<br>Archived data unavailable</div></div>
-				<div class="dsc-select dsc9 locked" dsc_id="8"><div class="dsc-tip">Paladin<br>Templar<br>Archived data unavailable</div></div>
+				<div class="dsc-select dsc1" dsc_id="0"><div class="dsc-tip">Mage<br>Frostbringer</div></div>
+				<div class="dsc-select dsc2" dsc_id="1"><div class="dsc-tip">Mage<br>Flameseer</div></div>
+				<div class="dsc-select dsc3" dsc_id="2"><div class="dsc-tip">Mage<br>Necromancer</div></div>
+				<div class="dsc-select dsc4 default" dsc_id="3"><div class="dsc-tip">Rogue<br>Viperblade</div></div>
+				<div class="dsc-select dsc5" dsc_id="4"><div class="dsc-tip">Rogue<br>Shadowstalker</div></div>
+				<div class="dsc-select dsc6" dsc_id="5"><div class="dsc-tip">Rogue<br>Soulthief</div></div>
+				<div class="dsc-select dsc7" dsc_id="6"><div class="dsc-tip">Paladin<br>Sentinel</div></div>
+				<div class="dsc-select dsc8" dsc_id="7"><div class="dsc-tip">Paladin<br>Justicar</div></div>
+				<div class="dsc-select dsc9" dsc_id="8"><div class="dsc-tip">Paladin<br>Templar</div></div>
 			</div>
 		</div>
 	</div>
@@ -64,20 +71,6 @@
 		</div>
 	</div>
 
-	<div class="content-footer">
-		<div class="footer">
-			<div class="footer-inner">
-				<div class="footer-buttons-left">
-					<div class="buttons bt1" id="undo_button"><div class="button-inner">Undo</div></div>
-					<div class="buttons bt1" id="reset_button"><div class="button-inner">Reset</div></div>
-					<a href="#" id="link_button"><div class="buttons bt2"><div class="button-inner">Link to this build</div></div></a>
-				</div>
-				<div class="footer-buttons-right">
-					<a href="https://web.archive.org/web/20171211125607/http://www.dungeonblitz.com/" target="_blank" rel="noreferrer"><div class="buttons bt2"><div class="button-inner">Play Dungeon Blitz</div></div></a>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="talent-tree-tip hidden"></div>
 </body>
 </html>
